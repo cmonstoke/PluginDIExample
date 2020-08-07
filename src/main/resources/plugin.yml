@@ -6,18 +6,18 @@ authors: [CmonStoke]
 description: An example di plugin
 website: example.com
 commands:
-  simples:
-    description: the Simples command from the DI Plugin example
+  test:
+    description: the test command from the DI Plugin example
     aliases:
-      - simple
-      - simplez
-    permission: simpledi.simple
-    permission-message: You don't have permissions to do a simplez.
-    usage: /simples
+      - testing
+      - testz
+    permission: testdi.test
+    permission-message: You don't have permissions to do a test.
+    usage: /test
 permissions:
-  simpledi.simple:
-    description: Allows simplez command
+  testdi.test:
+    description: Allows test command
     default: op
-  simpledi.*:
-    description: Wildcard simples permission
+  stestdi.*:
+    description: Wildcard test permission
     default: op
