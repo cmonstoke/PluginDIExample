@@ -1,0 +1,23 @@
+name: PluginDIExample
+version: @version@
+main: org.example.DependencyInjectionPlugin
+prefix: PDIE
+authors: [CmonStoke]
+description: An example di plugin
+website: example.com
+commands:
+  simples:
+    description: the Simples command from the DI Plugin example
+    aliases:
+      - simple
+      - simplez
+    permission: simpledi.simple
+    permission-message: You don't have permissions to do a simplez.
+    usage: /simples
+permissions:
+  simpledi.simple:
+    description: Allows simplez command
+    default: op
+  simpledi.*:
+    description: Wildcard simples permission
+    default: op
